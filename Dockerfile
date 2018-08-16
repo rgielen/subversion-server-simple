@@ -6,6 +6,8 @@ ENV SVN_CONFIG=/etc/apache2/dav_svn
 ENV SVN_PASSWD=${SVN_CONFIG}/dav_svn.passwd
 ENV SVN_AUTHFILE=${SVN_CONFIG}/dav_svn.authz
 
+ENV HTTPD_ENV_AUTHNAME="Subversion Authentication"
+
 COPY sites-available/* /etc/apache2/sites-available/
 
 RUN apt-get update && apt-get -y install subversion libapache2-mod-svn subversion-tools nano \
