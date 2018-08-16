@@ -1,4 +1,4 @@
-FROM rgielen/httpd-image-simple:17.10
+FROM rgielen/httpd-image-simple:18.04
 MAINTAINER "Rene Gielen" <rgielen@apache.org>
 
 ENV SVN_HOME=/var/lib/svn
